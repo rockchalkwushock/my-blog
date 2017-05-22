@@ -29,8 +29,11 @@
   },
   "dependencies": {
     "next": "~2.4.0",
+    "prop-types": "~15.5.10",
     "react": "~15.5.4",
-    "react-dom": "~15.5.4"
+    "react-dom": "~15.5.4",
+    "react-ga": "~2.2.0",
+    "redux": "~3.6.0"
   },
   "devDependencies": {
     "chalk": "~1.1.3",
