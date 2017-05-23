@@ -38,6 +38,7 @@ export default () => (
         font-family: Source Code Pro, monospace;
         height: 100vh;
         margin: 0;
+        overflow-x: hidden;
         padding: 0;
         width: 100vw;
       }

@@ -3,5 +3,15 @@
     "id": "test-blog",
     "date": "2017-05-22",
     "title": "Test Blog Post"
+  },
+  {
+    "id": "test-blog-2",
+    "date": "2017-05-03",
+    "title": "Poop"
+  },
+  {
+    "id": "test-blog-3",
+    "date": "2017-02-26",
+    "title": "It's my Birthday!"
   }
 ]
