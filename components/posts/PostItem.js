@@ -7,13 +7,13 @@ const PostItem = ({ date, title, id }) => (
       <h4>{title}</h4>
       <style jsx>{`
         article {
-          height: 2.5em;
-          display: flex;
           align-items: center;
-          flex-direction: row;
-          flex: 1;
           align-self: stretch;
           cursor: pointer;
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          height: 2.5em;
         }
         article:hover {
           border-bottom: 0.125em solid #ffd480;
@@ -22,6 +22,20 @@ const PostItem = ({ date, title, id }) => (
         h4 {
           margin-left: 3.5em;
           text-align: left;
+        }
+        @media (max-width: 450px) {
+          article {
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 0.5em;
+          }
+          h4, h5 {
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+          h4 {
+            margin-left: 0;
+          }
         }
       `}</style>
     </article>
