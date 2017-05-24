@@ -2,6 +2,9 @@ import page, { colors } from '../lib'
 import { A, Li, P, SubTitle } from '../components'
 
 const projects = [
+  <A className="small" href="https://github.com/rockchalkwushock/my-blog">
+    This Website!
+  </A>,
   <A
     className="small"
     href="https://github.com/rockchalkwushock/photography-backend"
@@ -76,10 +79,8 @@ export default page(() => (
       >
         except CSS, good Lord I
         hate CSS!
-      </em> I'm proficient with Git & a big fan of Github as the meme says:
+      </em>
     </P>
-    {/* TODO Add image back!!!*/}
-    {/* <Img alt="git-meme" url="https://hikaruzone.files.wordpress.com/2015/10/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png?w=640" />*/}
     <SubTitle>So a little about myself...</SubTitle>
     <P>
       I have served in the US Navy & am a veteran of OEF. I've gone to school for more time in my life than I would care to share

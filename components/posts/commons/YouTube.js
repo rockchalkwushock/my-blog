@@ -4,7 +4,7 @@ const YouTubePlayer = props => (
   <div className="youtube-player">
     <YouTube {...withDefault(props)} />
     <style jsx>{`
-      .youtube-player { margin: 15px 0; }
+      .youtube-player { margin: 0.938em 0; }
     `}</style>
   </div>
 )

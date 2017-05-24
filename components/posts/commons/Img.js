@@ -6,18 +6,15 @@ const Img = ({ alt, url }) => (
         align-items: center;
         align-self: center;
         display: flex;
-        height: 500px;
+        height: 31.250em;
         justify-content: center;
         margin: 5% 0;
         width: 100%;
       }
       img { height: 50vh; }
-      @media (max-width: 750px) and (orientation: portrait) {
-        .img-container { height: 300px; }
-      }
-      @media (max-width: 750px) and (orientation: landscape) {
+      @media (max-width: 46.875em) and (orientation: landscape) {
         .img-container {
-          height: 200px;
+          height: 12.500em;
           margin: 10% 0;
         }
         img { height: 80vh; }

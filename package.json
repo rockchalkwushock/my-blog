@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://github.com/rockchalkwushock)",
-  "homepage": "https://rcws-development.com",
   "description": "My blog built with React & Next.",
   "repository": "https://github.com/rockchalkwushock/my-blog.git",
   "main": "index.js",
@@ -14,12 +13,29 @@
     "lint": "eslint components layout lib pages --fix",
     "precommit": "lint-staged",
     "prettier": "node scripts/prettier.js write",
-    "start": "next start"
+    "start": "NODE_ENV=production node index.js"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "now": {
+    "name": "rcws-blog",
+    "env": {
+      "GATRACKINGID": "@blog_ga_tracking_id",
+      "NODE_ENV": "production"
+    },
+    "files": [
+      "components",
+      "lib",
+      "pages",
+      "static",
+      "index.js",
+      "package.json",
+      "posts.json",
+      "yarn.lock"
+    ]
   },
   "lint-staged": {
     "*.js": [
