@@ -1,9 +1,11 @@
+import { colors } from '../lib'
+
 const FlexContainer = ({ children }) => (
   <div className="flex-container">
     {children}
     <style jsx>{`
       .flex-container {
-        background-color: #2d3135;
+        background-color: ${colors.background.secondary};
         display: flex;
         flex-direction: column;
         margin: auto;

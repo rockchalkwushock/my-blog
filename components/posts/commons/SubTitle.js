@@ -1,9 +1,11 @@
+import { colors } from '../../../lib'
+
 const SubTitle = ({ children }) => (
   <h3>
     {children}
     <style jsx>{`
       h3 {
-        color: #ffe6b3;
+        color: ${colors.textAndLinks.secondary};
         text-decoration: underline;
       }
     `}</style>

@@ -11,17 +11,17 @@ const Img = ({ alt, url }) => (
         margin: 5% 0;
         width: 100%;
       }
-      .img-container
-      @media (max-width: 750px) {
-        .img-container { height: 200px; }
-      }
-      @media (max-width: 550px) {
+      img { height: 50vh; }
+      @media (max-width: 750px) and (orientation: portrait) {
         .img-container { height: 300px; }
       }
-      @media (max-width: 450px) {
-        .img-container { height: 250px; }
+      @media (max-width: 750px) and (orientation: landscape) {
+        .img-container {
+          height: 200px;
+          margin: 10% 0;
+        }
+        img { height: 80vh; }
       }
-      img { height: 50vh; }
     `}</style>
   </div>
 )

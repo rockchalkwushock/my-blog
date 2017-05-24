@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { colors } from '../../../lib'
+
 const NavLink = ({ text, url }) => (
   <Link prefetch href={url}>
     <a className="nav-link">
@@ -10,8 +12,8 @@ const NavLink = ({ text, url }) => (
           font-family: Love Ya Like A Sister, cursive;
         }
         .nav-link:hover {
-          background-color: #cdd7fa;
-          color: #2d3135;
+          background-color: ${colors.textAndLinks.primary};
+          color: ${colors.background.secondary};
         }
       `}</style>
     </a>

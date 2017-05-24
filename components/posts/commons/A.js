@@ -1,22 +1,26 @@
+import { colors } from '../../../lib'
+
 const A = ({ children, href, className }) => (
   <a href={href} className={className}>
     {children}
     <style jsx>{`
       a.inText {
-        color: #ffd480;
         text-decoration: underline;
+        text-decoration-color: ${colors.textAndLinks.headings};
       }
       a.inText:hover {
-        color:
+        background-color: ${colors.textAndLinks.headings};
+        color: ${colors.background.secondary};
+        text-decoration-color: ${colors.background.secondary};
       }
       a.small {
         text-decoration: underline;
-        text-decoration-color: #ffd480;
+        text-decoration-color: ${colors.textAndLinks.headings};
       }
       a.small:hover {
-        background-color: #ffd480;
-        color: #2d3135;
-        text-decoration-color: #2d3135;
+        background-color: ${colors.textAndLinks.headings};
+        color: ${colors.background.secondary};
+        text-decoration-color: ${colors.background.secondary};
       }
     `}</style>
   </a>

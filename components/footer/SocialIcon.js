@@ -1,5 +1,7 @@
 import FontAwesome from 'react-fontawesome'
 
+import { colors } from '../../lib'
+
 const SocialIcon = ({ icon, url }) => (
   <a className="social-link" href={url}>
     <FontAwesome name={icon} size="2x" />
@@ -7,7 +9,7 @@ const SocialIcon = ({ icon, url }) => (
       .social-link {
         padding: 0 0.25em 0 0.25em;
       }
-      .social-link:hover { color: #cdd7fa; }
+      .social-link:hover { color: ${colors.textAndLinks.primary}; }
     `}</style>
   </a>
 )
