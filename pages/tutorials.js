@@ -1,5 +1,5 @@
 import FontAwesome from 'react-fontawesome'
-import page from '../lib'
+import page, { colors } from '../lib'
 import { Title } from '../components'
 
 export default page(() => (
@@ -17,7 +17,7 @@ export default page(() => (
         justify-content: center;
       }
       a:hover {
-        color: green;
+        color: ${colors.textAndLinks.good};
       }
     `}</style>
   </div>

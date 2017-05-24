@@ -1,10 +1,9 @@
 import page from '../lib'
-import { PostItem, Title } from '../components'
+import { PostItem } from '../components'
 import data from '../posts.json'
 
 export default page(() => (
   <div className="blog-page">
-    <Title>My Blog</Title>
     <div className="posts">
       {data.map(post => <PostItem key={post.id} {...post} />)}
     </div>

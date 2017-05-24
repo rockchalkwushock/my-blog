@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://github.com/rockchalkwushock)",
+  "homepage": "https://rcws-development.com",
   "description": "My blog built with React & Next.",
-  "repository": "",
+  "repository": "https://github.com/rockchalkwushock/my-blog.git",
   "main": "index.js",
   "scripts": {
     "build": "next build",

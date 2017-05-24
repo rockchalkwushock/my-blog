@@ -1,20 +1,24 @@
 import Head from 'next/head'
 
-import page from '../../lib'
-import { A, Meta, P, Scrimba, SubTitle, Title, YouTube } from '../../components'
+import page, { colors } from '../../lib'
+import { A, P, Scrimba, SubTitle, Title, YouTube } from '../../components'
 
 export default page(() => (
   <div style={{ padding: '2em 1.5em 2em 1.5em' }}>
-    <Meta date="2017-05-23" />
     <Head>
       <title>Hello World from RCWS Development!</title>
     </Head>
     <Title>Hello World from RCWS Development!</Title>
+    <div style={{ textAlign: 'center' }}>
+      <span style={{ color: colors.textAndLinks.headings }}>
+        May 23, 2017 | 117 words
+      </span>
+    </div>
     <SubTitle>Welcome to my Blog</SubTitle>
     <P>
       Never in my life would I have thought this would be something I would do:
     </P>
-    <em>Make a blog...</em>
+    <em style={{ color: colors.textAndLinks.emphasis }}>Make a blog...</em>
     <P>
       Apparently it's what the cool kids in the web development world do and I want
       so badly to be a cool kid too!
@@ -23,7 +27,7 @@ export default page(() => (
       There will be lots of different blogs about tech, best practices, and things
       that I have found along my journey to become an
       {' '}
-      <em>employed</em>
+      <em style={{ color: colors.textAndLinks.good }}>employed</em>
       {' '}
       web developer.
       I plan to start my own web series on YouTube shortly and will link the content on
