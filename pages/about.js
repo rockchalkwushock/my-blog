@@ -82,6 +82,64 @@ export default page(() => (
       alt="git-meme"
       url="https://hikaruzone.files.wordpress.com/2015/10/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png?w=640"
     />
+    <SubTitle>So a little about myself...</SubTitle>
+    <P>
+      I have served in the US Navy & am a veteran of OEF. I've gone to school for more time in my life than I would care to share
+      and amazingly enough don't have a whole lot to show for it. I've studied Medicine, Law, & Engineering so I've got my bases
+      covered! It was a Programming in C course that really got me going on wanting to write code. The challenge it presented was
+      just pure fun. I could fiddle with a piece of code for hours figuring out how and why it did what it was doing. I loved that
+      class! So when my last employer was failing to pay me what they owed me & the engineer shindig was really becoming a bore to
+      me I thought
+      {' '}
+      <em style={{ color: 'pink' }}>
+        "What was the last thing I did that I really loved & that really challenged me?"
+      </em>
+      {' '}
+      I will take it you know
+      what the answer to that question was.
+    </P>
+    <P>
+      So I embarked on the journey to become a web developer in July of 2016. Here we are nearing a year and no I am not a web developer.
+      I'm a web-ninja with his blue belt in the majority of his arsenal. I've learned so much in the last year that it's hard to
+      believe it's only been a year that I crammed all of this into my head. It has been frustrating, there have been
+      {' '}
+      <em style={{ color: 'pink' }}>very</em>
+      {' '}
+      long days/nights,
+      & there have been extremely fruitless moments during this journey; but I'm not giving up and that is all that matters. I think the really
+      interesting thing now is going back and refactoring projects I built 6-8 months ago and seeing not just how much the Javascript ecosystem
+      & tech in general has changed; but how much I have grown and learned in that time to become a better developer. Just look at my first
+      website hosted on Github & built using Create-React-App:
+      {' '}
+      <A
+        className="inText"
+        href="https://rockchalkwushock.github.io/rcws-development/"
+      >
+        rcws-development@1.0.0
+      </A>
+    </P>
+    <P>
+      In my free time...haha what is
+      {' '}
+      <em style={{ color: 'pink' }}>free time</em>
+      ? Wait no seriously I do have a life outside of this just let me think on it for a moment. I like to spend time with my dog, Miller, &
+      any chance I get to see my adorable little niece is always a plus. I am a diehard Jayhawk, so
+      {' '}
+      <em style={{ backgroundColor: 'blue', color: 'red' }}>ROCK CHALK!!!</em>
+      {' '}
+      Yes that means all employment
+      opportunities in the state of Missouri will be rejected...kidding I'm just kidding. I enjoy fishing, mircobrews, & live music.
+      I'd love to relocate anywhere in the Pacific Northwest for those gorgeous views, hiking, & camping...hint hint!
+    </P>
+    <P>
+      I'm always looking for work & willing to relocate,
+      {' '}
+      <em style={{ color: 'lightsalmon' }}>
+        Oh dear Lord please get me out of Kansas!
+      </em>
+      {' '}
+      So if you are in the market for a blue-belt web-ninja trained in the arts of Node, React, & dark beer you sir/ma'am have found your man!
+    </P>
     <div style={{ textAlign: 'center' }}>
       <SubTitle>Projects & Articles</SubTitle>
       <Li lists={projects} />
