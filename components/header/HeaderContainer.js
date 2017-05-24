@@ -1,16 +1,16 @@
 const HeaderContainer = ({ children }) => (
-	<div className="header">
-		{children}
-		<style jsx>{`
+  <div className="header">
+    {children}
+    <style jsx>{`
       .header {
-        align-content: center;
-        align-items: center;
         display: flex;
-        flex: 1 1 auto;
-        justify-content: space-between;
+        font-size: 1.125em;
+        height: 2em;
+        justify-content: flex-end;
+        padding-right: 0.75em;
       }
     `}</style>
-	</div>
+  </div>
 )
 
 export default HeaderContainer

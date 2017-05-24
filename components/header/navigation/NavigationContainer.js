@@ -1,14 +1,13 @@
 const NavContainer = ({ children }) => (
-	<div className="nav-container">
-		{children}
-		<style jsx>{`
+  <div className="nav-container">
+    {children}
+    <style jsx>{`
       .nav-container {
+        align-self: center;
         display: flex;
-        flex: 1 1 auto;
-        text-align: center;
       }
     `}</style>
-	</div>
+  </div>
 )
 
 export default NavContainer

@@ -61,3 +61,4 @@ typings/
 # Editors
 .idea
 .vscode
+.DS_Store

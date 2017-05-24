@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 const PostItem = ({ date, title, id }) => (
-	<Link prefetch href={`${new Date(date).getFullYear()}/${id}`}>
-		<article>
-			<h5>{date}</h5>
-			<h4>{title}</h4>
-			<style jsx>{`
+  <Link prefetch href={`${new Date(date).getFullYear()}/${id}`}>
+    <article>
+      <h5>{date}</h5>
+      <h4>{title}</h4>
+      <style jsx>{`
         article {
           height: 2.5em;
           display: flex;
@@ -16,7 +16,7 @@ const PostItem = ({ date, title, id }) => (
           cursor: pointer;
         }
         article:hover {
-          border-bottom: 0.125em solid #cdd7f4;
+          border-bottom: 0.125em solid #ffd480;
           transition: all .2s ease-in-out;
         }
         h4 {
@@ -24,8 +24,8 @@ const PostItem = ({ date, title, id }) => (
           text-align: left;
         }
       `}</style>
-		</article>
-	</Link>
+    </article>
+  </Link>
 )
 
 export default PostItem
