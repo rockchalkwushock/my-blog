@@ -7,6 +7,7 @@ export default () => (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="google-site-verification" content="9REb3tx03TyhMlN95vlFK6FDBN_ZNwwqzPog3VSlvtU" />
       <meta name="apple-mobile-web-app-title" content="RCWS Development" />
       <meta name="application-name" content="RCWS Development" />
       <meta name="msapplication-TileColor" content="#378ee5" />
