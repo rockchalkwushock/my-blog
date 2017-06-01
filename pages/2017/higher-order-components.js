@@ -1,8 +1,9 @@
+import { Component } from 'react'
 import Head from 'next/head'
 import Highlight from 'react-highlight'
 
 import page, { colors } from '../../lib'
-import { A, Li, P, SubTitle, Title } from '../../components'
+import { A, DisqusThread, Li, P, SubTitle, Title } from '../../components'
 
 const examples = [
   <A
@@ -19,35 +20,38 @@ const examples = [
   </A>
 ]
 
-export default page(() => (
-  <div style={{ padding: '2em 1.5em 2em 1.5em' }}>
-    <Head>
-      <title>Higher Order Components</title>
-    </Head>
-    <Title>
-      Higher Order Components
-    </Title>
-    <div style={{ textAlign: 'center' }}>
-      <span style={{ color: colors.textAndLinks.headings }}>
-        May 24, 2017 | 377 words
-      </span>
-    </div>
-    <SubTitle>Using HOC's to make life easier</SubTitle>
-    <P>
-      No lie I love me some Higher Order Components(HOC)! It makes life so much easier to be able to apply whatever
-      business logic, layout, styling, data, etc to components by wrapping them in an HOC. Think of an HOC as just that:
-      a wrapper for your component that lifts up the logic that would normally be present making it reusable with other
-      components needing the same data, layout, etc. It lends itself to more composable code & less writing of the same
-      logic across multiple files. This very blog uses 2 HOC's. One for setting the global layout of the application
-      & another for applying Google Analytics throughout all views.
-    </P>
-    <SubTitle>What is a HOC?</SubTitle>
-    <P>
-      A Higher Order Component is in all reality a Higher Order Function; which is nothing more than
-      a function that does one of the following or both: takes in another function as an argument &/or
-      returns a function.
-    </P>
-    <Highlight className="javascript">{`
+class Post extends Component {
+  render() {
+    const { pathname } = this.props.url
+    return (
+      <div style={{ padding: '2em 1.5em 2em 1.5em' }}>
+        <Head>
+          <title>Higher Order Components</title>
+        </Head>
+        <Title>
+          Higher Order Components
+        </Title>
+        <div style={{ textAlign: 'center' }}>
+          <span style={{ color: colors.textAndLinks.headings }}>
+            May 24, 2017 | 377 words
+          </span>
+        </div>
+        <SubTitle>Using HOC's to make life easier</SubTitle>
+        <P>
+          No lie I love me some Higher Order Components(HOC)! It makes life so much easier to be able to apply whatever
+          business logic, layout, styling, data, etc to components by wrapping them in an HOC. Think of an HOC as just that:
+          a wrapper for your component that lifts up the logic that would normally be present making it reusable with other
+          components needing the same data, layout, etc. It lends itself to more composable code & less writing of the same
+          logic across multiple files. This very blog uses 2 HOC's. One for setting the global layout of the application
+          & another for applying Google Analytics throughout all views.
+        </P>
+        <SubTitle>What is a HOC?</SubTitle>
+        <P>
+          A Higher Order Component is in all reality a Higher Order Function; which is nothing more than
+          a function that does one of the following or both: takes in another function as an argument &/or
+          returns a function.
+        </P>
+        <Highlight className="javascript">{`
       function myHigherOrderFunction(x) {
         return function(y) {
           console.log(x + y);
@@ -56,10 +60,10 @@ export default page(() => (
       var AdditionWithHofs = myHigherOrderFunction(2)(4)
       console.log(AdditionWithHofs) // returns 6
     `}</Highlight>
-    <P>
-      That syntax might look familiar if you use the connect() method (HOC!) from the React-Redux library:
-    </P>
-    <Highlight className="javascript">{`
+        <P>
+          That syntax might look familiar if you use the connect() method (HOC!) from the React-Redux library:
+        </P>
+        <Highlight className="javascript">{`
       import React, { Component } from 'react'
       import { connect } from 'react-redux'
       import { someAction } from '../actions'
@@ -87,29 +91,29 @@ export default page(() => (
        */
       export default connect(null, { someAction })(App)
     `}</Highlight>
-    <SubTitle>Thinking in React</SubTitle>
-    <P>
-      In React.js components are nothing more than your typical javascript function that returns
-      some amount of HTML. This was one of the core concepts applied to Next.js. When writing a
-      <em style={{ color: colors.textAndLinks.emphasis }}> page </em>
-      {' '}
-      in Next.js you are exporting
-      a function that will return some amount of HTML to the DOM. Our HOC accepts a component which
-      is nothing more than a function so we can wrap the function with the WithLayout HOC and
-      it will return our page with the applied layout settings.
-    </P>
-    <P>
-      In this short tutorial we will use create-next-app to spin up a Next.js boilerplate in a jiffy so we can get started!
-    </P>
-    <Highlight className="bash">{`
+        <SubTitle>Thinking in React</SubTitle>
+        <P>
+          In React.js components are nothing more than your typical javascript function that returns
+          some amount of HTML. This was one of the core concepts applied to Next.js. When writing a
+          <em style={{ color: colors.textAndLinks.emphasis }}> page </em>
+          {' '}
+          in Next.js you are exporting
+          a function that will return some amount of HTML to the DOM. Our HOC accepts a component which
+          is nothing more than a function so we can wrap the function with the WithLayout HOC and
+          it will return our page with the applied layout settings.
+        </P>
+        <P>
+          In this short tutorial we will use create-next-app to spin up a Next.js boilerplate in a jiffy so we can get started!
+        </P>
+        <Highlight className="bash">{`
       creat-next-app hoc-playground
       cd hoc-playground && mkdir lib
       cd lib && touch index.js WithLayout.js && cd ..
       open vscode
     `}</Highlight>
 
-    <SubTitle>Writing the WithLayout HOC</SubTitle>
-    <Highlight className="javascript">{`
+        <SubTitle>Writing the WithLayout HOC</SubTitle>
+        <Highlight className="javascript">{`
       import { Component } from 'react'
       import PropTypes from 'prop-types'
       import { loadGetInitialProps } from 'next/dist/lib/utils'
@@ -152,8 +156,8 @@ export default page(() => (
         }
       )
     `}</Highlight>
-    <SubTitle>Using our HOC in the Application</SubTitle>
-    <Highlight className="javascript">{`
+        <SubTitle>Using our HOC in the Application</SubTitle>
+        <Highlight className="javascript">{`
       // /pages/index.js
       import WithLayout from '../lib'
 
@@ -165,12 +169,12 @@ export default page(() => (
         </div>
       ))
     `}</Highlight>
-    <P>
-      Note that I could create a component called HomePage and write the syntax like below,
-      or if you like decorators like I do you can use them as well. Just make sure you are using the
-      proper babel-plugins so they work.
-    </P>
-    <Highlight className="javascript">{`
+        <P>
+          Note that I could create a component called HomePage and write the syntax like below,
+          or if you like decorators like I do you can use them as well. Just make sure you are using the
+          proper babel-plugins so they work.
+        </P>
+        <Highlight className="javascript">{`
       // /pages/index.js
       import { Component } from 'react'
       import WithLayout from '../lib'
@@ -181,7 +185,7 @@ export default page(() => (
 
       export default WithLayout()(HomePage)
     `}</Highlight>
-    <Highlight className="javascript">{`
+        <Highlight className="javascript">{`
       // /pages/index.js
       import { Component } from 'react'
       import WithLayout from '../lib'
@@ -191,14 +195,19 @@ export default page(() => (
         ...
       }
     `}</Highlight>
-    <SubTitle>Examples of HOC's</SubTitle>
-    <Li lists={examples} />
-    <P>
-      The next time you see yourself writing a lot of the same business logic code across
-      multiple files in your application it might be time to think about using an HOC instead!
-    </P>
-    <P>
-      Happy Coding!
-    </P>
-  </div>
-))
+        <SubTitle>Examples of HOC's</SubTitle>
+        <Li lists={examples} />
+        <P>
+          The next time you see yourself writing a lot of the same business logic code across
+          multiple files in your application it might be time to think about using an HOC instead!
+        </P>
+        <P>
+          Happy Coding!
+        </P>
+        <DisqusThread path={pathname} />
+      </div>
+    )
+  }
+}
+
+export default page(Post)
