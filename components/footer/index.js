@@ -26,7 +26,11 @@ const Footer = () => (
         size="2x"
         url="https://www.youtube.com/channel/UCtHoANxQ1Nf5ga_jqf6sm0A"
       />
-      <SocialIcon icon="envelope" url="mailto:rockchalkwushock@icloud.com" />
+      <SocialIcon
+        icon="envelope"
+        size="2x"
+        url="mailto:rockchalkwushock@icloud.com"
+      />
     </SocialContainer>
     <Copyright />
   </FooterContainer>
