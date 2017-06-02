@@ -2,9 +2,9 @@ import FontAwesome from 'react-fontawesome'
 
 import { colors } from '../../lib'
 
-const SocialIcon = ({ icon, url }) => (
+const SocialIcon = ({ icon, size, url }) => (
   <a className="social-link" href={url}>
-    <FontAwesome name={icon} size="2x" />
+    <FontAwesome name={icon} size={size} />
     <style jsx>{`
       .social-link {
         padding: 0 0.25em 0 0.25em;
