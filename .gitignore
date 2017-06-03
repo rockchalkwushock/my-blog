@@ -63,3 +63,4 @@ env.config.js
 .idea
 .vscode
 .DS_Store
+.notes.md
