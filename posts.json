@@ -1,4 +1,9 @@
 [{
+    "id": "one-year",
+    "date": "2017-07-11",
+    "title": "One year of Learning & Writing Code"
+  },
+  {
     "id": "deploying-with-now",
     "date": "2017-06-02",
     "title": "Deploying with Zeit's Now-Cli"
