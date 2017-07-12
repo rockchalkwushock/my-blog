@@ -2,12 +2,15 @@ import Head from 'next/head'
 
 import { colors } from '../lib'
 
-export default () => (
-  <div>
+export default () =>
+  (<div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-      <meta name="google-site-verification" content="9REb3tx03TyhMlN95vlFK6FDBN_ZNwwqzPog3VSlvtU" />
+      <meta
+        name="google-site-verification"
+        content="9REb3tx03TyhMlN95vlFK6FDBN_ZNwwqzPog3VSlvtU"
+      />
       <meta name="apple-mobile-web-app-title" content="RCWS Development" />
       <meta name="application-name" content="RCWS Development" />
       <meta name="msapplication-TileColor" content="#378ee5" />
@@ -58,7 +61,9 @@ export default () => (
       <title>RCWS Development</title>
     </Head>
     <style jsx global>{`
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
       body {
         background-color: ${colors.background.primary};
         color: ${colors.textAndLinks.primary};
@@ -73,12 +78,14 @@ export default () => (
         color: ${colors.textAndLinks.primary};
         text-decoration: none;
       }
-      a:visited { color: ${colors.textAndLinks.primary}; }
+      a:visited {
+        color: ${colors.textAndLinks.primary};
+      }
       #nprogress {
         pointer-events: none;
       }
       ::selection {
-        background-color: ${colors.textAndLinks.primary};;
+        background-color: ${colors.textAndLinks.primary};
         color: ${colors.background.secondary};
       }
       #nprogress .bar {
@@ -108,23 +115,36 @@ export default () => (
         background: #282c34;
       }
       .hljs-comment,
-      .hljs-quote { color: #5c6370; font-style: italic; }
+      .hljs-quote {
+        color: #5c6370;
+        font-style: italic;
+      }
       .hljs-doctag,
       .hljs-keyword,
-      .hljs-formula { color: #c678dd; }
+      .hljs-formula {
+        color: #c678dd;
+      }
       .hljs-section,
       .hljs-name,
       .hljs-selector-tag,
       .hljs-deletion,
-      .hljs-subst { color: #e06c75; }
-      .hljs-literal { color: #56b6c2; }
+      .hljs-subst {
+        color: #e06c75;
+      }
+      .hljs-literal {
+        color: #56b6c2;
+      }
       .hljs-string,
       .hljs-regexp,
       .hljs-addition,
       .hljs-attribute,
-      .hljs-meta-string { color: #98c379; }
+      .hljs-meta-string {
+        color: #98c379;
+      }
       .hljs-built_in,
-      .hljs-class .hljs-title { color: #e6c07b; }
+      .hljs-class .hljs-title {
+        color: #e6c07b;
+      }
       .hljs-attr,
       .hljs-variable,
       .hljs-template-variable,
@@ -132,16 +152,25 @@ export default () => (
       .hljs-selector-class,
       .hljs-selector-attr,
       .hljs-selector-pseudo,
-      .hljs-number { color: #d19a66; }
+      .hljs-number {
+        color: #d19a66;
+      }
       .hljs-symbol,
       .hljs-bullet,
       .hljs-link,
       .hljs-meta,
       .hljs-selector-id,
-      .hljs-title { color: #61aeee; }
-      .hljs-emphasis { font-style: italic; }
-      .hljs-strong { font-weight: bold; }
-      .hljs-link { text-decoration: underline; }
+      .hljs-title {
+        color: #61aeee;
+      }
+      .hljs-emphasis {
+        font-style: italic;
+      }
+      .hljs-strong {
+        font-weight: bold;
+      }
+      .hljs-link {
+        text-decoration: underline;
+      }
     `}</style>
-  </div>
-)
+  </div>)
