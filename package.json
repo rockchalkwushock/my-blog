@@ -13,7 +13,7 @@
     "dev": "next",
     "lint": "eslint components layout lib pages --fix",
     "precommit": "lint-staged",
-    "prettier": "node scripts/prettier.js write",
+    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --no-semi --use-tabs",
     "start": "NODE_ENV=production node index.js"
   },
   "config": {
@@ -63,12 +63,10 @@
     "redux": "^3.7.1"
   },
   "devDependencies": {
-    "chalk": "^2.0.1",
     "cz-conventional-changelog": "~2.0.0",
     "eslint": "^4.2.0",
     "eslint-config-equimper": "^2.2.1",
     "eslint-config-prettier": "^2.3.0",
-    "glob": "~7.1.2",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.1",
     "prettier": "^1.5.2"
