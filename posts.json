@@ -1,4 +1,10 @@
-[{
+[
+  {
+    "id": "what-i-learned-relearning-graphql",
+    "date": "2017-07-25",
+    "title": "What I learned relearning GraphQL"
+  },
+  {
     "id": "one-year",
     "date": "2017-07-11",
     "title": "One year of Learning & Writing Code"
