@@ -42,7 +42,11 @@
     ]
   },
   "lint-staged": {
-    "*.js": ["yarn lint", "yarn prettier", "git add"]
+    "*.js": [
+      "yarn lint",
+      "yarn prettier",
+      "git add"
+    ]
   },
   "dependencies": {
     "babel-plugin-transform-define": "~1.3.0",
@@ -56,15 +60,15 @@
     "react-ga": "~2.2.0",
     "react-highlight": "~0.10.0",
     "react-youtube": "~7.4.0",
-    "redux": "^3.7.1"
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "cz-conventional-changelog": "~2.0.0",
-    "eslint": "^4.2.0",
+    "eslint": "^4.3.0",
     "eslint-config-equimper": "^2.2.1",
     "eslint-config-prettier": "^2.3.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.1",
-    "prettier": "^1.5.2"
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
   }
 }
